@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: rgb(0, 46, 196);
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+nav ul li{
+    margin: 0 10px;
+    padding: 10px 30px;
+    font-size: 25px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: croissant one;
+}

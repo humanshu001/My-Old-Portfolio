@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Humanshu Jaglan Official</title>
-   
-        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <link rel="stylesheet" href="Assets/CSS/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -31,31 +34,48 @@
         <div class="left">
             <span>Welcome to </span><br>
             <span id="element"></span>
-            
+
         </div>
         <div class="right">
             <img src="Assets/Images/mainbg.png" alt="">
         </div>
     </section>
+    <section class="mainsec">
+        <h1>Introduction:</h1>
+        <p>Hello, I'm Humanshu Jaglan, a dedicated Computer Science and Engineering student currently pursuing my B.Tech degree at Geeta University. My journey into the fascinating world of technology began at Geeta Bharti Senior Secondary School, where I laid the foundation for my passion in this field.</p>
+
+            <p>As a self-taught full-stack web developer, I've immersed myself in a diverse set of programming languages, including Python, C, C++, Java, HTML, CSS, and JavaScript. These languages have not only enhanced my problem-solving skills but have also fueled my creativity in the realm of software development.</p>
+            
+            <p>With a strong focus on web development, I've become proficient in crafting interactive and visually engaging web applications using HTML, CSS, and JavaScript. Additionally, I've delved deeply into the Django framework, empowering me to build dynamic and scalable web applications tailored to meet specific client and user needs.</p>
+            
+            <p>My journey doesn't stop at web development; I'm currently expanding my expertise into app development. Android Studio has become my go-to tool for exploring the exciting world of mobile applications. I'm dedicated to leveraging my programming skills to create innovative and user-centric mobile solutions.</p>
+            
+            <p>To ensure the highest quality in my work and seamless collaboration with fellow developers, I rely on a suite of powerful tools, including Visual Studio Code (VS Code), Git, GitHub, and Android Studio. These tools not only enhance my productivity but also facilitate effective teamwork and version control.</p>
+            
+            <p>My technology journey is marked by continuous learning, growth, and the excitement of bringing ideas to life through code. The ever-evolving tech landscape offers boundless opportunities, and I'm thrilled to explore them with you.</p>
+            
+            <p>Thank you for visiting my portfolio website, where you can explore a showcase of my web and app projects. Feel free to reach out as we embark on this captivating journey through the world of technology!</p>
+    </section>
 </body>
 <script>
     var typed = null; // Initialize typed variable
-  
+
     function runTypedScript() {
-      // Destroy the previous Typed.js instance if it exists
-      if (typed !== null) {
-        typed.destroy();
-      }
-  
-      // Create a new Typed.js instance
-      typed = new Typed('#element', {
-        strings: ["My Portfolio Website", "Humanshu Jaglan's Portfolio"],
-        typeSpeed: 90,
-      });
+        // Destroy the previous Typed.js instance if it exists
+        if (typed !== null) {
+            typed.destroy();
+        }
+
+        // Create a new Typed.js instance
+        typed = new Typed('#element', {
+            strings: ["My Portfolio Website", "Humanshu Jaglan's Portfolio"],
+            typeSpeed: 90,
+        });
     }
-  
+
     runTypedScript();
-  
+
     setInterval(runTypedScript, 10000); // 10000 milliseconds = 10 seconds
-  </script>
+</script>
+
 </html>

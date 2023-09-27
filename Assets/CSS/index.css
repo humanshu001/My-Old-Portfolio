@@ -1,5 +1,6 @@
 * {
     margin: 0px;
+    padding: 0;
     font-family: croissant one;
 }
 body{
@@ -24,7 +25,7 @@ header {
     justify-content: space-evenly;
 }
 
-nav li a {
+nav ul li a {
     text-decoration: none;
     color: white;
     padding: 10px 47px;
@@ -33,12 +34,12 @@ nav li a {
 }
 
 nav li a:hover {
-    background-color: rgb(138, 85, 189);
+    background-color: rgb(160, 125, 193);
     border-radius: 10px;
 }
 
 .top .logo {
-    font-family: courgette;
+    font-family: croissant one;
     font-size: 45px;
     color: white;
     margin: 0 30px;
@@ -58,13 +59,12 @@ nav ul {
     align-content: center;
     justify-content: space-around;
     align-items: center;
-    margin: -20px 20px;
+    background-color: rgb(247, 238, 255);
 }
 
 .firstsec img {
     width: 590px;
     padding: 25px 1px;
-    margin: 102px 0px;
 }
 #element{
     color:rgb(138,85,189) ;

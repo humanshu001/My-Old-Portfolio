@@ -18,8 +18,9 @@
                 <nav>
                     <ul>
                         <li><a href="#">HOME</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">SERVICES</a></li>
+                        <li><a href="#">ACHIEVEMENTS</a></li>
+                        <li><a href="#">RESUME</a></li>
+                        <li><a href="#">PROJECTS</a></li>
                         <li><a href="#">CONTACT</a></li>
                     </ul>
                 </nav>
@@ -33,14 +34,28 @@
             
         </div>
         <div class="right">
-            <img src="Assets/Images/secbg.png" alt="">
+            <img src="Assets/Images/mainbg.png" alt="">
         </div>
     </section>
 </body>
-    <script>
-        var typed = new Typed('#element', {
-      strings: ["My Portfolio Website","Humanshu Jaglan's Resume"],
-      typeSpeed: 90,
-    });
-    </script>
+<script>
+    var typed = null; // Initialize typed variable
+  
+    function runTypedScript() {
+      // Destroy the previous Typed.js instance if it exists
+      if (typed !== null) {
+        typed.destroy();
+      }
+  
+      // Create a new Typed.js instance
+      typed = new Typed('#element', {
+        strings: ["My Portfolio Website", "Humanshu Jaglan's Portfolio"],
+        typeSpeed: 90,
+      });
+    }
+  
+    runTypedScript();
+  
+    setInterval(runTypedScript, 10000); // 10000 milliseconds = 10 seconds
+  </script>
 </html>

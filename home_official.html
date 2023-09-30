@@ -40,42 +40,113 @@
             <img src="Assets/Images/mainbg.png" alt="">
         </div>
     </section>
-    <section class="mainsec">
-        <h1>Introduction:</h1>
-        <p>Hello, I'm Humanshu Jaglan, a dedicated Computer Science and Engineering student currently pursuing my B.Tech degree at Geeta University. My journey into the fascinating world of technology began at Geeta Bharti Senior Secondary School, where I laid the foundation for my passion in this field.</p>
-
-            <p>As a self-taught full-stack web developer, I've immersed myself in a diverse set of programming languages, including Python, C, C++, Java, HTML, CSS, and JavaScript. These languages have not only enhanced my problem-solving skills but have also fueled my creativity in the realm of software development.</p>
-            
-            <p>With a strong focus on web development, I've become proficient in crafting interactive and visually engaging web applications using HTML, CSS, and JavaScript. Additionally, I've delved deeply into the Django framework, empowering me to build dynamic and scalable web applications tailored to meet specific client and user needs.</p>
-            
-            <p>My journey doesn't stop at web development; I'm currently expanding my expertise into app development. Android Studio has become my go-to tool for exploring the exciting world of mobile applications. I'm dedicated to leveraging my programming skills to create innovative and user-centric mobile solutions.</p>
-            
-            <p>To ensure the highest quality in my work and seamless collaboration with fellow developers, I rely on a suite of powerful tools, including Visual Studio Code (VS Code), Git, GitHub, and Android Studio. These tools not only enhance my productivity but also facilitate effective teamwork and version control.</p>
-            
-            <p>My technology journey is marked by continuous learning, growth, and the excitement of bringing ideas to life through code. The ever-evolving tech landscape offers boundless opportunities, and I'm thrilled to explore them with you.</p>
-            
-            <p>Thank you for visiting my portfolio website, where you can explore a showcase of my web and app projects. Feel free to reach out as we embark on this captivating journey through the world of technology!</p>
+    <section class="sec2">
+        <div class="abdata">
+            <div class="abimg">
+                <img src="Assets/Images/myr.png" alt="">
+            </div>
+            <div class="abtxt">
+                <h1>About <span>Me</span></h1>
+                <p>I'm Humanshu Jaglan, a Computer Science and Engineering student at Geeta University. My journey in
+                    technology started during my school days at Geeta Bharti Senior Secondary School, where I discovered my
+                    passion for coding and problem-solving.</p>
+                    <p>
+                        As a self-driven full-stack web developer, I'm fluent in languages like Python, C, C++, Java, HTML, CSS,
+                    and JavaScript. I excel in crafting interactive and visually appealing web applications. My proficiency
+                    extends to the Django framework, allowing me to build dynamic and scalable web solutions.
+                </p>
+    
+                <p>
+                    Recently, I've ventured into app development using Android Studio, eager to create innovative mobile
+                    experiences. I rely on tools like VS Code, Git, and GitHub for efficient development and collaboration.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="sec2">
+        <h1>My <span>Certificates</span></h1>
+        <div class="row">
+            <img src="Assets/Images/certifictes/certificate1.jpg" alt="">
+            <img src="Assets/Images/certifictes/certificate2.jpg" alt="">
+            <img src="Assets/Images/certifictes/certificate3.jpg" alt="">
+        </div>
+        <div class="row">
+            <img src="Assets/Images/certifictes/certificate4.jpg" alt="">
+            <img src="Assets/Images/certifictes/certificate5.jpg" alt="">
+        </div><br><br>
+        <a href="achievements.html">View More &rarr;</a>
+    </section>
+    <section class="sec2">
+        <h1>My <span>Projects</span></h1>
+        <div class="proj">
+            <div class="pimg">
+                <h1><span>1. Full Stack Ecommerce Website</span></h1>
+                <a href="https://github.com/humanshu001/Jaglan-Jewellry" target="_blank">
+                    <img src="Assets/Images/jj.jpeg" alt="">
+                </a>
+            </div>
+            <div class="pdata">
+                <p>This is My First Full Stack Ecommerce Project. Which is based on Python Framework Django. The Features of this website are User Authentication, Buy Products, Checkout System, Wishlist, Appointment Form and Feedback. Click the Image for Github link.</p>
+            </div>
+        </div>
+        <a href="projects.html">View More &rarr;</a>
     </section>
 </body>
 <script>
-    var typed = null; // Initialize typed variable
-
-    function runTypedScript() {
-        // Destroy the previous Typed.js instance if it exists
-        if (typed !== null) {
+    var typed = new Typed('#element', {
+        strings: ["My Portfolio Website", "Humanshu Jaglan's Resume"],
+        typeSpeed: 100,
+    });
+    
+    // Function to update Typed.js content
+    function updateTypedContent() {
+        if (typed) {
             typed.destroy();
         }
-
-        // Create a new Typed.js instance
+        
         typed = new Typed('#element', {
-            strings: ["My Portfolio Website", "Humanshu Jaglan's Portfolio"],
-            typeSpeed: 90,
+            strings: ["My Portfolio Website", "Humanshu Jaglan's Resume"],
+            typeSpeed: 100,
         });
     }
+    
+    // Run the script initially
+    updateTypedContent();
+    
+    // Set up an interval to update the content every 10 seconds
+    var intervalId = setInterval(updateTypedContent, 10000); // 10000 milliseconds = 10 seconds
+    </script>
 
-    runTypedScript();
-
-    setInterval(runTypedScript, 10000); // 10000 milliseconds = 10 seconds
-</script>
 
 </html>
+<!-- <section class="mainsec">
+    <h1>Introduction:</h1>
+    <p>Hello, I'm Humanshu Jaglan, a dedicated Computer Science and Engineering student currently pursuing my B.Tech degree at Geeta University. My journey into the fascinating world of technology began at Geeta Bharti Senior Secondary School, where I laid the foundation for my passion in this field.</p>
+
+        <p>As a self-taught full-stack web developer, I've immersed myself in a diverse set of programming languages, including Python, C, C++, Java, HTML, CSS, and JavaScript. These languages have not only enhanced my problem-solving skills but have also fueled my creativity in the realm of software development.</p>
+        
+        <p>With a strong focus on web development, I've become proficient in crafting interactive and visually engaging web applications using HTML, CSS, and JavaScript. Additionally, I've delved deeply into the Django framework, empowering me to build dynamic and scalable web applications tailored to meet specific client and user needs.</p>
+        
+        <p>My journey doesn't stop at web development; I'm currently expanding my expertise into app development. Android Studio has become my go-to tool for exploring the exciting world of mobile applications. I'm dedicated to leveraging my programming skills to create innovative and user-centric mobile solutions.</p>
+        
+        <p>To ensure the highest quality in my work and seamless collaboration with fellow developers, I rely on a suite of powerful tools, including Visual Studio Code (VS Code), Git, GitHub, and Android Studio. These tools not only enhance my productivity but also facilitate effective teamwork and version control.</p>
+        
+        <p>My technology journey is marked by continuous learning, growth, and the excitement of bringing ideas to life through code. The ever-evolving tech landscape offers boundless opportunities, and I'm thrilled to explore them with you.</p>
+        
+        <p>Thank you for visiting my portfolio website, where you can explore a showcase of my web and app projects. Feel free to reach out as we embark on this captivating journey through the world of technology!</p>
+</section> -->
+<!-- <div class="row">
+    <img src="Assets/Images/certifictes/certificate1.jpg" alt="">
+    <img src="Assets/Images/certifictes/certificate2.jpg" alt="">
+    <img src="Assets/Images/certifictes/certificate3.jpg" alt="">
+</div>
+<div class="row">
+    <img src="Assets/Images/certifictes/certificate4.jpg" alt="">
+    <img src="Assets/Images/certifictes/certificate5.jpg" alt="">
+    <img src="Assets/Images/certifictes/certificate6.jpeg" alt="">
+</div>
+<div class="row">
+    <img src="Assets/Images/certifictes/certificate7.jpg" alt="">
+    <img src="Assets/Images/certifictes/certificate8.jpg" alt="">
+    <img src="Assets/Images/certifictes/certificate9.jpg" alt="">
+</div> -->

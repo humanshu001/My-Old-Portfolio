@@ -11,10 +11,45 @@ body{
     --purple: rgb(130, 130, 228);
 }
 .sec2{
-    background-color: rgb(247, 238, 255);
+    background-color: rgb(255, 225, 254);
     border-radius: 10px;
     margin: 3% 9%;
     padding: 50px 100px;
+}
+.dark-mode-toggle label{
+    color: #ffffff;
+    font-size: 20px;
+}
+.ds1{
+    position: absolute;
+    right: 0;
+    width: 250px;
+}
+.ds2{
+    position: absolute;
+    left: 0;
+    width: 250px;
+}
+.ds3{
+    position: absolute;
+    z-index: 300;
+    width: 400px;
+    left: 0;
+    top: 670px;
+}
+.viewmore{
+    margin-top: 100px;
+}
+.ds4{
+    position: absolute;
+    top: 1500px;
+    right: 0;
+    width: 400px;
+}
+.ds5{
+    position: absolute;
+    left: 0;
+    width: 350px;
 }
 .pimg img{
     width: 70%;
@@ -27,20 +62,52 @@ body{
 .row img{
     width: 350px;
 }
-.sec2 > a{
-    border: 2px solid rgb(134, 54, 209);
-    color: rgb(134, 54, 209);
+.viewmore a{
+    background-color: rgb(255, 3, 247);
+    font-weight: 900;
     font-size: 25px;
     text-decoration: none;
+    color: #ffffff;
     padding: 10px;
     border-radius: 5px;
     height: 40px;
-    margin-top: 40px;
+}
+.skill .s1{
+    display: flex;
+}
+.skill .s2{
+    display: flex;
+}
+.skill .s1 div{
+    margin: 0 20px;
+}
+.skill .s2 div{
+    margin: 0 20px;
+}
+.skill{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+#arrow1{
+    width: 350px;
+    margin-left: 20px;
+}
+.skill span{
+    margin-right: 10px;
+}
+.skill svg{
+    margin: 0 5px;
 }
 .sec2 h1{
-    font-size: 55px;
+    font-size: 4.5em;
     font-weight: 100;
     padding: 30px 0;
+    margin-bottom: 50px;
+}
+.arr2{
+    height: 75px;
 }
 .sec2 p{
     padding-top: 10px;
@@ -48,10 +115,11 @@ body{
     margin-bottom: 20px;
 }
 .sec2 h1 span{
-    color: rgb(138,85,189);
+    color: rgb(186, 0, 180);
+    margin-left: 20px;
 }
 .pimg h1{
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .abdata{
@@ -61,15 +129,15 @@ body{
     border-radius: 50%;
     height: 500px;
     margin: 0 50px;
-    border: 7px solid rgb(134, 54, 209);
-    box-shadow: -30px 0px 0 4px rgb(130, 130, 228);
+    border: 7px solid rgb(180, 0, 174);
+    box-shadow: -30px 0px 0 4px rgb(112, 0, 108);
 }
 
 .top {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: rgb(134, 54, 209);
+    background-color: rgb(180, 0, 174);
     width: 100%;
     height: 100px;
     padding-top: 20px;
@@ -90,7 +158,7 @@ nav ul li a {
 }
 
 nav li a:hover {
-    background-color: rgb(160, 125, 193);
+    background-color: rgb(118, 0, 114);
     border-radius: 10px;
 }
 
@@ -116,19 +184,20 @@ nav ul {
     align-content: center;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(247, 238, 255);
+    background-color: rgb(255, 225, 254);
     height: 600px;
+    z-index: 400;
 }
 
 .firstsec img {
     width: 590px;
     padding: 25px 1px;
 }
-#element{
-    color:rgb(138,85,189) ;
+#text{
+    color:rgb(180, 0, 174) ;
 }
 .firstsec .left{
-    font-size: 60px;
+    font-size: 80px;
     width: 500px;
 }
 .firstsec .right{
@@ -144,10 +213,47 @@ nav ul {
 }
 .mainsec h1{
     font-size: 40px;
-    color:rgb(138,85,189) ;
+    color:rgb(180, 0, 174) ;
     margin-bottom: 30px;
 }
 .mainsec p{
     font-size: 25px;
     margin: 20px 0;
+}
+/* Default styles for light mode */
+body {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+body.dark-mode{
+    background-image: linear-gradient(to bottom right,black,rgb(43, 0, 62),rgb(180, 0, 174),rgb(0, 5, 45),rgb(0, 5, 45));
+
+  }
+
+body.dark-mode .sec2{
+    background-color: transparent;
+}
+/* Add dark mode styles for other elements as needed */
+
+body.dark-mode .firstsec{
+    background: transparent;
+}
+
+body.dark-mode .top{
+    background: transparent;
+}
+.ds6{
+    position: absolute;
+    width: 400px;
+    left: 0;
+    
+}
+body.dark-mode .sec2 h1 span{
+    color: #ffffff;
 }

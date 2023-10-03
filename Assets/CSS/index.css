@@ -64,7 +64,7 @@ body{
 }
 .viewmore a{
     background-color: rgb(255, 3, 247);
-    font-weight: 900;
+    font-weight: 600;
     font-size: 25px;
     text-decoration: none;
     color: #ffffff;
@@ -173,7 +173,9 @@ nav li a:hover {
 nav li {
     display: inline;
 }
-
+.active{
+    background-color: rgb(255, 3, 247);
+}
 nav ul {
     list-style: none;
     margin: 0 30px;
@@ -232,9 +234,9 @@ body.dark-mode {
     color: #ffffff;
 }
 body.dark-mode{
-    background-image: linear-gradient(to bottom right,black,rgb(43, 0, 62),rgb(180, 0, 174),rgb(0, 5, 45),rgb(0, 5, 45));
+    background-image: linear-gradient(to bottom right,black,rgb(43, 0, 62),rgb(180, 0, 174),rgb(0, 5, 45),black,rgb(0, 5, 45),rgb(0, 202, 202),rgb(0, 5, 45),black);
 
-  }
+}
 
 body.dark-mode .sec2{
     background-color: transparent;

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humanshu Jaglan Official</title>
+    <link rel="stylesheet" href="Assets/CSS/index.css">
+    
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <div class="logo">HJ</div>
+            <div class="dark-mode-toggle">
+                <input type="checkbox" id="dark-mode-switch">
+                <label for="dark-mode-switch">Dark</label>
+            </div>
+            
+            <div class="navigation">
+                <nav>
+                    <ul>
+                        <li><a class="link" href="home_official.html">HOME</a></li>
+                        <li><a class="link" href="achivements.html">ACHIEVEMENTS</a></li>
+                        <li><a class="link" href="resume.html">RESUME</a></li>
+                        <li><a class="link" href="projects.html">PROJECTS</a></li>
+                        <li><a class="link active" href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="firstsec">
+        <div class="left">
+            <span>Welcome to </span><br>
+            <div id="text"></div>
+
+
+        </div>
+        <div class="right">
+            <img src="Assets/Images/mainbg.png" alt="">
+        </div>
+
+    </section>
+</body>
+
+
+<script>
+// for typing effect of the website
+
+const texts = ["My Portfolio Website", "Humanshu Jaglan's Website"];
+        let index = 0;
+        let textIndex = 0;
+        let isTyping = true;
+        const typingSpeed = 100; // Adjust the typing speed in milliseconds
+        const backspaceSpeed = 100; // Adjust the backspace speed in milliseconds
+        const delayAfterText2 = 1000; // 5-second delay after typing text2
+        let delayTimeout = null;
+
+        function typeText() {
+            const currentText = texts[textIndex];
+            const element = document.getElementById('text');
+            if (isTyping) {
+                if (index < currentText.length) {
+                    element.innerHTML += currentText.charAt(index);
+                    index++;
+                    setTimeout(typeText, typingSpeed);
+                } else {
+                    isTyping = false;
+                    delayTimeout = setTimeout(startBackspace, delayAfterText2);
+                }
+            } else {
+                if (index > 0) {
+                    element.innerHTML = currentText.substring(0, index - 1);
+                    index--;
+                    setTimeout(typeText, backspaceSpeed);
+                } else {
+                    isTyping = true;
+                    textIndex = (textIndex + 1) % texts.length; // Toggle between texts
+                    setTimeout(typeText, typingSpeed);
+                }
+            }
+        }
+
+        function startBackspace() {
+            clearTimeout(delayTimeout); // Clear the delay timeout
+            index = texts[textIndex].length; // Set index to the end of the text
+            isTyping = false;
+            setTimeout(typeText, backspaceSpeed);
+        }
+
+        window.onload = function() {
+            typeText();
+        };
+</script>
+<script>
+// for dark mode
+
+
+
+  const darkModeSwitch = document.getElementById('dark-mode-switch');
+const body = document.body;
+
+function setDarkMode(enabled) {
+    body.classList.toggle('dark-mode', enabled);
+    localStorage.setItem('dark-mode-enabled', enabled);
+}
+
+const storedDarkMode = localStorage.getItem('dark-mode-enabled');
+if (storedDarkMode) {
+    darkModeSwitch.checked = storedDarkMode === 'true';
+}
+
+darkModeSwitch.addEventListener('change', (e) => {
+    setDarkMode(e.target.checked);
+});
+
+setDarkMode(darkModeSwitch.checked);
+
+</script>
+<script>
+    const activePage =document.querySelectorAll(".list");
+
+    function activeLink(){
+        activePage.forEach((item) => 
+            item.classList.remove('active'));
+        this.classList.add('active');
+    }
+
+    activeLink.forEach((item)=>
+        item.addEventListener('click', activeLink));
+
+</script>
+
+</html>

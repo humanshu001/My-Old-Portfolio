@@ -5,9 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Humanshu Jaglan Official</title>
-
-    <script src="Assets/JS/typed.js"></script>
-    
     <link rel="stylesheet" href="Assets/CSS/index.css">
     
 </head>
@@ -24,11 +21,11 @@
             <div class="navigation">
                 <nav>
                     <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">ACHIEVEMENTS</a></li>
-                        <li><a href="#">RESUME</a></li>
-                        <li><a href="#">PROJECTS</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li><a class="link" href="home_official.html">HOME</a></li>
+                        <li><a class="link" href="achivements.html">ACHIEVEMENTS</a></li>
+                        <li><a class="link" href="resume.html">RESUME</a></li>
+                        <li><a class="link" href="projects.html">PROJECTS</a></li>
+                        <li><a class="link" href="contact.html">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
@@ -437,6 +434,7 @@
         <h1>My <span>Projects</span> <img class="arr2" src="Assets/Images/arrow.png" alt=""></h1>
         <div class="proj">
             <img src="Assets/Images/design2.png" class="ds6" alt="">
+            <img src="Assets/Images/design3.png" class="ds1" alt="">
             <div class="pimg">
                 <h1><span>1. Full Stack Ecommerce Website</span></h1>
                 <a href="https://github.com/humanshu001/Jaglan-Jewellry" target="_blank">
@@ -449,7 +447,6 @@
                     Appointment Form and Feedback. Click the Image for Github link.</p>
             </div>
         </div>
-        <img src="Assets/Images/design3.png" class="ds1" alt="">
         <div class="viewmore">
 
             <a  href="projects.html">View More &rarr;</a>
@@ -461,13 +458,14 @@
 <script>
 // for typing effect of the website
 
-const texts = ["My Portfolio Website", "Humanshu Jaglan's Website"];
+        const texts = ["My Portfolio Website", "Humanshu Jaglan's Website"];
         let index = 0;
         let textIndex = 0;
         let isTyping = true;
-        const typingSpeed = 50; // Adjust the typing speed in milliseconds
-        const backspaceSpeed = 25; // Adjust the backspace speed in milliseconds
-        const delayAfterText2 = 5000; // 5-second delay after typing text2
+        const typingSpeed = 100; // Adjust the typing speed in milliseconds
+        const backspaceSpeed = 100; // Adjust the backspace speed in milliseconds
+        const delayAfterText2 = 1000; // 5-second delay after typing text2
+        let delayTimeout = null;
 
         function typeText() {
             const currentText = texts[textIndex];
@@ -479,7 +477,7 @@ const texts = ["My Portfolio Website", "Humanshu Jaglan's Website"];
                     setTimeout(typeText, typingSpeed);
                 } else {
                     isTyping = false;
-                    setTimeout(typeText, backspaceSpeed);
+                    delayTimeout = setTimeout(startBackspace, delayAfterText2);
                 }
             } else {
                 if (index > 0) {
@@ -489,15 +487,16 @@ const texts = ["My Portfolio Website", "Humanshu Jaglan's Website"];
                 } else {
                     isTyping = true;
                     textIndex = (textIndex + 1) % texts.length; // Toggle between texts
-
-                    // Add a delay after typing text2
-                    if (textIndex === 1) {
-                        setTimeout(typeText, delayAfterText2);
-                    } else {
-                        setTimeout(typeText, typingSpeed);
-                    }
+                    setTimeout(typeText, typingSpeed);
                 }
             }
+        }
+
+        function startBackspace() {
+            clearTimeout(delayTimeout); // Clear the delay timeout
+            index = texts[textIndex].length; // Set index to the end of the text
+            isTyping = false;
+            setTimeout(typeText, backspaceSpeed);
         }
 
         window.onload = function() {
@@ -527,6 +526,19 @@ darkModeSwitch.addEventListener('change', (e) => {
 });
 
 setDarkMode(darkModeSwitch.checked);
+
+</script>
+<script>
+    const activePage =document.querySelectorAll(".list");
+
+    function activeLink(){
+        activePage.forEach((item) => 
+            item.classList.remove('active'));
+        this.classList.add('active');
+    }
+
+    activeLink.forEach((item)=>
+        item.addEventListener('click', activeLink));
 
 </script>
 

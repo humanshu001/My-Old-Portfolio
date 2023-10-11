@@ -239,16 +239,16 @@ body.dark-mode{
 }
 
 body.dark-mode .sec2{
-    background-color: transparent;
+    background-color: rgb(0, 3, 28);
 }
 /* Add dark mode styles for other elements as needed */
 
 body.dark-mode .firstsec{
-    background: transparent;
+    background: rgb(0, 3, 28);
 }
 
 body.dark-mode .top{
-    background: transparent;
+    background: rgb(0, 1, 15);
 }
 .ds6{
     position: absolute;

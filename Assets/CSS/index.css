@@ -114,6 +114,16 @@ body{
     font-size: 25px;
     margin-bottom: 20px;
 }
+.sec2 a{
+    text-decoration: none;
+    color: white;
+}
+.sec2 li{
+    font-size: 30px;
+}
+.sec2 a:hover{
+    text-decoration: underline;
+}
 .sec2 h1 span{
     color: rgb(186, 0, 180);
     margin-left: 20px;

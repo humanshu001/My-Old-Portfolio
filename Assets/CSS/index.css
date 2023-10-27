@@ -151,6 +151,9 @@ body{
     width: 100%;
     height: 100px;
     padding-top: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 header {
     display: flex;
@@ -237,7 +240,13 @@ body {
     background-color: #ffffff;
     color: #333333;
 }
-
+.toggle{
+    display: none;
+}
+.toggle button span{
+    font-size: 30px;
+    color: #ffffff;
+}
 /* Dark mode styles */
 body.dark-mode {
     background-color: #333333;
@@ -268,4 +277,45 @@ body.dark-mode .top{
 }
 body.dark-mode .sec2 h1 span{
     color: #ffffff;
+}
+@media screen and (max-width:430px) and (min-width: 320px){
+    .top{
+        width: 100%;
+        height: 40px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navigation{
+        display: none;
+    }
+   
+    .top .logo{
+        font-size: 40px;
+    }
+    .toggle{
+        display: block;
+    }
+    .firstsec{
+        flex-direction: column;
+        height: 100%;
+    }
+    .ds1{
+        display: none;
+    }
+    .ds2{
+        display: none;
+    }
+    .ds3{
+        display: none;
+    }
+    .ds4{
+        display: none;
+    }
+    .ds5{
+        display: none;
+    }
+    .ds6{
+        display: none;
+    }
+
 }

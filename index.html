@@ -7,6 +7,7 @@
     <title>Humanshu Jaglan Official</title>
     <link rel="stylesheet" href="Assets/CSS/index.css">
     <script src="Assets/JS/typing.js"></script>
+    <script src="Assets/JS/index.js"></script>
     
 </head>
 
@@ -14,13 +15,17 @@
     <header>
         <div class="top">
             <div class="logo">HJ</div>
-            <div class="dark-mode-toggle">
-                <input type="checkbox" id="dark-mode-switch">
-                <label for="dark-mode-switch">Dark</label>
-            </div>
             
-            <div class="navigation">
+            <div class="navigation hidden">
                 <nav>
+                    <div class="dark-mode-toggle">
+                        <input type="checkbox" id="dark-mode-switch">
+                        <label for="dark-mode-switch">Dark</label>
+                    </div>
+                    <button class="toggle-close">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                    </button>
                     <ul>
                         <li><a class="link" href="/">HOME</a></li>
                         <li><a class="link" href="achivements.html">ACHIEVEMENTS</a></li>
@@ -30,12 +35,10 @@
                     </ul>
                 </nav>
             </div>
-            <div class="toggle">
-                <button>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+            <div class="toggle-button">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
             </div>
         </div>
     </header>
@@ -71,7 +74,7 @@
                     extends to the Django framework, allowing me to build dynamic and scalable web solutions.
                 </p>
 
-                <p>
+                <p id="not-in-mobile">
                     Recently, I've ventured into app development using Android Studio, eager to create innovative mobile
                     experiences. I rely on tools like VS Code, Git, and GitHub for efficient development and
                     collaboration.
@@ -88,7 +91,7 @@
         <div class="skill">
 
             <div class="s1">
-                <div>
+                <div class="skill-tag">
                     <span>HTML</span><br>
                     <span>CSS</span><br>
                     <span>JS</span><br>
@@ -96,8 +99,12 @@
                     <span>C++</span>
                 </div>
                 <div>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                    <div class="svg-lines">
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
                     </svg>
                     <svg height="15" width="15">
                         <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
@@ -105,153 +112,160 @@
                     <svg height="15" width="15">
                         <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
                     </svg>
-                    <svg height="15" width="15">
+                    <svg class="erase" height="15" width="15">
                         <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
                     </svg>
-                    <svg height="15" width="15">
+                    <svg class="erase" height="15" width="15">
                         <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
                     </svg>
-                    <svg height="15" width="15">
+                    <svg class="erase" height="15" width="15">
                         <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
                     </svg>
-                    <svg height="15" width="15">
+                    <svg class="erase" height="15" width="15">
                         <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
                     </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg><br>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
+                    <svg class="erase" height="15" width="15">
                         <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
                     </svg>
                     <svg height="15" width="15">
                         <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
                     </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg>
-                    <br>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg><br>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg>
-                    <br>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg><br>
+                
+                    </div>
+
+                    <div class="svg-lines">
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
+                        </svg>
+                        
+                    </div>
+                    <div class="svg-lines">
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
+                        </svg>
+                    </div>
+                    <div class="svg-lines">
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
+                        </svg>
+                    </div>
+                    <div class="svg-lines">
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
+                        </svg>
+                    </div>
                 </div>
             </div>
             <div class="s2">
-                <div>
+                <div class="skill-tag">
                     <span>Python</span><br>
                     <span>Java</span><br>
                     <span>Kotlin</span><br>
@@ -259,177 +273,184 @@
                     <span>PHP</span>
                 </div>
                 <div>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg>
-                    <br>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg>
-                    <br>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg>
-                    <br>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg>
-                    <br>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg>
-                    <svg height="15" width="15">
-                        <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
-                    </svg>
-
+                    <div class="svg-lines">
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
+                        </svg>
+                    </div>
+                    <div class="svg-lines">
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
+                        </svg>
+                    </div>
+                    <div class="svg-lines">
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
+                        </svg>
+                    </div>
+                    <div class="svg-lines">
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
+                        </svg>
+                    </div>
+                    <div class="svg-lines">
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(255, 3, 247)" />
+                        </svg>
+                        <svg class="erase" height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
+                        </svg>
+                        <svg height="15" width="15">
+                            <circle cx="7" cy="7" r="7" fill="rgb(130,130,130)" />
+                        </svg>
+                        
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="sec2">
         <h1>My <span>Certificates</span> <img class="arr2" src="Assets/Images/arrow.png" alt=""></h1>
-        <div class="row">
+        <div class="row not-in-mobile">
             <img src="Assets/Images/certifictes/certificate1.jpg" alt="">
             <img src="Assets/Images/certifictes/certificate2.jpg" alt="">
             <img src="Assets/Images/certifictes/certificate3.jpg" alt="">
         </div>
         <img class="ds1" src="Assets/Images/design3.png" alt="">
         
-        <div class="row">
+        <div class="row ">
             <img src="Assets/Images/certifictes/certificate4.jpg" alt="">
             <img src="Assets/Images/certifictes/certificate5.jpg" alt="">
+            <img src="Assets/Images/certifictes/certificates_ai.png" alt="">
         </div>
         <img class="ds5" src="Assets/Images/design2.png" alt="">
         <br><br>

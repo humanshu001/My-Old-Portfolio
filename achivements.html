@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Humanshu Jaglan Official</title>
-    <link rel="stylesheet" href="Assets/CSS/index.css">
-    
+    <link rel="stylesheet" href="Assets/CSS/index.css">`
+    <script src="Assets/JS/index.js"></script>
+    <script src="Assets/JS/ty ping.js"></script>
 </head>
-
 <body>
     <header>
         <div class="top">
             <div class="logo">HJ</div>
-            <div class="dark-mode-toggle">
-                <input type="checkbox" id="dark-mode-switch">
-                <label for="dark-mode-switch">Dark</label>
-            </div>
             
-            <div class="navigation">
+            <div class="navigation hidden">
                 <nav>
+                    <div class="dark-mode-toggle">
+                        <input type="checkbox" id="dark-mode-switch">
+                        <label for="dark-mode-switch">Dark</label>
+                    </div>
+                    <button class="toggle-close">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                    </button>
                     <ul>
                         <li><a class="link" href="/">HOME</a></li>
                         <li><a class="link" href="achivements.html">ACHIEVEMENTS</a></li>
@@ -28,6 +31,11 @@
                         <li><a class="link" href="contact.html">CONTACT</a></li>
                     </ul>
                 </nav>
+            </div>
+            <div class="toggle-button">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
             </div>
         </div>
     </header>
@@ -44,75 +52,33 @@
 
     </section>
     <section class="sec2">
-        <h1>My Certificates: </h1>
-        <div class="row">
+        <h1>My Participation Certificates: </h1>
+        <div class="participation">
             <img src="Assets/Images/certifictes/certificate1.jpg" alt="">
             <img src="Assets/Images/certifictes/certificate2.jpg" alt="">
             <img src="Assets/Images/certifictes/certificate3.jpg" alt="">
-        </div>
-        <div class="row">
             <img src="Assets/Images/certifictes/certificate4.jpg" alt="">
             <img src="Assets/Images/certifictes/certificate5.jpg" alt="">
-            <img src="Assets/Images/certifictes/certificate6.jpeg" alt="">
-        </div>
-        <div class="row">
             <img src="Assets/Images/certifictes/certificate7.jpg" alt="">
             <img src="Assets/Images/certifictes/certificate8.jpg" alt="">
             <img src="Assets/Images/certifictes/certificate9.jpg" alt="">
+            <img src="Assets/Images/certifictes/pledge.jpg" alt="">
+        </div>
+        <br><br><br><br>
+        <h1>Certfication in My Domain: </h1>
+        <div class="domain">
+            <img src="Assets/Images/certifictes/certificate_css.png" alt="">
+            <img src="Assets/Images/certifictes/certificates_ai.png" alt="">
+            <img src="Assets/Images/certifictes/certificate_hacking.png" alt="">
+        </div>
+        <br><br><br><br>
+        <h1>My Appreciation Letters: </h1>
+        <div class="appreciation">
+            
         </div>
     </section>
     
 </body>
-
-
-<script>
-// for typing effect of the website
-
-const texts = ["My Portfolio Website", "Humanshu Jaglan's Website"];
-        let index = 0;
-        let textIndex = 0;
-        let isTyping = true;
-        const typingSpeed = 100; // Adjust the typing speed in milliseconds
-        const backspaceSpeed = 100; // Adjust the backspace speed in milliseconds
-        const delayAfterText2 = 1000; // 5-second delay after typing text2
-        let delayTimeout = null;
-
-        function typeText() {
-            const currentText = texts[textIndex];
-            const element = document.getElementById('text');
-            if (isTyping) {
-                if (index < currentText.length) {
-                    element.innerHTML += currentText.charAt(index);
-                    index++;
-                    setTimeout(typeText, typingSpeed);
-                } else {
-                    isTyping = false;
-                    delayTimeout = setTimeout(startBackspace, delayAfterText2);
-                }
-            } else {
-                if (index > 0) {
-                    element.innerHTML = currentText.substring(0, index - 1);
-                    index--;
-                    setTimeout(typeText, backspaceSpeed);
-                } else {
-                    isTyping = true;
-                    textIndex = (textIndex + 1) % texts.length; // Toggle between texts
-                    setTimeout(typeText, typingSpeed);
-                }
-            }
-        }
-
-        function startBackspace() {
-            clearTimeout(delayTimeout); // Clear the delay timeout
-            index = texts[textIndex].length; // Set index to the end of the text
-            isTyping = false;
-            setTimeout(typeText, backspaceSpeed);
-        }
-
-        window.onload = function() {
-            typeText();
-        };
-</script>
 <script>
 // for dark mode
 
@@ -151,6 +117,4 @@ setDarkMode(darkModeSwitch.checked);
         item.addEventListener('click', activeLink));
 
 </script>
-
-
 </html>

@@ -3,10 +3,7 @@
     padding: 0;
     font-family:maven pro;
 }
-body{
-    display: flex;
-    flex-direction: column;
-}
+
 :root {
     --purple: rgb(130, 130, 228);
 }
@@ -175,7 +172,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    
+    width: 100%;
 }
 
 nav ul li a {
@@ -192,7 +189,7 @@ nav li a:hover {
 }
 
 .top .logo {
-    font-family: edwardian script itc;
+    font-family: edwardian script itc !important;
     font-weight: 800;
     font-size: 55px;
     color: white;
@@ -221,6 +218,7 @@ nav ul {
     padding-top: 100px;
 }
 .navigation nav{
+    width: 100%;
     display: flex;
     align-items: center;
 }
@@ -282,15 +280,18 @@ body.dark-mode{
 }
 body.dark-mode .sec2{
     background-color: rgb(0, 3, 28);
+    /* background: transparent; */
 }
 /* Add dark mode styles for other elements as needed */
 
 body.dark-mode .firstsec{
     background: rgb(0, 3, 28);
+    /* background: transparent; */
 }
 
 body.dark-mode .top{
     background: rgb(0, 1, 15);
+    /* background: transparent; */
 }
 .ds6{
     position: absolute;
@@ -301,6 +302,23 @@ body.dark-mode .top{
 
 body.dark-mode .sec2 h1 span{
     color: #ffffff;
+}
+.participation{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+}
+.participation img{
+    width: 100%;
+}
+.domain{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3em;
+}
+.domain img{
+    width: 80%;
+    margin: auto;
 }
 @media screen and (max-width:1350px){
     nav ul li a {

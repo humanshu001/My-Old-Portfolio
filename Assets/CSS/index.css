@@ -593,3 +593,10 @@ body.dark-mode .sec2 h1 span{
         text-align: center;
     }
 }
+
+
+@media screen and (max-width:380px){
+    *{
+        overflow: auto;
+    }
+}

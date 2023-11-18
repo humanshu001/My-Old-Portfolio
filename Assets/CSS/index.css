@@ -299,7 +299,14 @@ body.dark-mode .top{
     left: -200px;
     
 }
-
+.appreciation img{
+    width: 75%;
+}
+.appreciation{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 body.dark-mode .sec2 h1 span{
     color: #ffffff;
 }

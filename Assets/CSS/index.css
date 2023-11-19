@@ -3,8 +3,16 @@
     padding: 0;
     font-family:maven pro;
 }
+@font-face {
+    font-family: Qwitcher Grypen;
+    src: url('../files/Qwitcher_Grypen/QwitcherGrypen-Bold.ttf');
+}
+@font-face {
+    font-family: maven pro;
+    src: url('../files/Maven_Pro/MavenPro-VariableFont_wght.ttf');
+}
 
-  @import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&family=Raleway:wght@300&family=Tilt+Neon&display=swap');
+
 :root {
     --purple: rgb(130, 130, 228);
 }

@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const storedDarkMode = localStorage.getItem('dark-mode-enabled');
     if (storedDarkMode) {
         darkModeSwitch.checked = storedDarkMode === 'true';
+    } else {
+        darkModeSwitch.checked = false; // Set the dark mode switch to unchecked
     }
 
     darkModeSwitch.addEventListener('change', (e) => {

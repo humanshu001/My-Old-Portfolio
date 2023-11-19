@@ -1,10 +1,22 @@
-* {
+*{
     margin: 0px;
     padding: 0;
-    font-family:maven pro;
+    /* font-family:maven pro; */
+}
+.sec2 *, .top *{
+    font-family: maven pro;
+
+}
+html{
+    width: 100%;
+    /* overflow: hidden; */
+    height: 200%;   
+}
+body{
+    width: 100vw;
 }
 @font-face {
-    font-family: Qwitcher Grypen;
+    font-family: 'Qwitcher Grypen';
     src: url('../files/Qwitcher_Grypen/QwitcherGrypen-Bold.ttf');
 }
 @font-face {
@@ -207,7 +219,7 @@ nav li a:hover {
 }
 
 .top .logo {
-    font-family: Qwitcher Grypen !important;
+    font-family: Qwitcher Grypen;
     font-weight: 800;
     font-size: 55px;
     color: white;
@@ -252,7 +264,9 @@ nav ul {
     width: 500px;
     margin-top: 100px;
     height: 500px;
+    font-family: Qwitcher Grypen;
 }
+
 .firstsec .right{
     font-size: 50px;
     width: 600px;
@@ -260,21 +274,6 @@ nav ul {
     justify-content: center;
 }
 
-.mainsec{
-    margin: 70px 20%;
-    padding: 20px;
-    background-color: rgb(247, 238, 255);
-    border-radius: 7px;
-}
-.mainsec h1{
-    font-size: 40px;
-    color:rgb(180, 0, 174) ;
-    margin-bottom: 30px;
-}
-.mainsec p{
-    font-size: 25px;
-    margin: 20px 0;
-}
 /* Default styles for light mode */
 body {
     background-color: #ffffff;
@@ -307,6 +306,7 @@ body.dark-mode .sec2{
 
 body.dark-mode .firstsec{
     background: rgb(0, 3, 28);
+    /* background: transparent; */
 }
 
 body.dark-mode .top{
@@ -485,9 +485,16 @@ body.dark-mode .sec2 h1 span{
     }
     .firstsec .left{
         height: 500px;
+        text-align: center;
         margin-top: 100px;
     }
 }
+@media screen and (max-width: 900px){
+    .participation{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 @media screen and (max-width: 800px){
     .sec2{
         padding: 30px;
@@ -620,6 +627,10 @@ body.dark-mode .sec2 h1 span{
     .firstsec .left{
         font-size: 47px;
         text-align: center;
+    }
+    .right img{
+        width: 8em;
+        margin: auto;
     }
 }
 

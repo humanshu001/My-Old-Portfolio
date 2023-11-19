@@ -162,7 +162,6 @@
     height: 500px;
     margin: 0 50px;
     border: 7px solid rgb(180, 0, 174);
-    box-shadow: -30px 0px 0 4px rgb(112, 0, 108);
 }
 
 .top {
@@ -236,7 +235,7 @@ nav ul {
     padding: 25px 1px;
 }
 #text{
-    color:rgb(180, 0, 174) ;
+    color:rgb(180, 0, 174);
 }
 .firstsec .left{
     font-size: 80px;
@@ -245,6 +244,8 @@ nav ul {
 .firstsec .right{
     font-size: 50px;
     width: 600px;
+    display: flex;
+    justify-content: center;
 }
 
 .mainsec{
@@ -289,18 +290,15 @@ body.dark-mode{
 }
 body.dark-mode .sec2{
     background-color: rgb(0, 3, 28);
-    /* background: transparent; */
 }
 /* Add dark mode styles for other elements as needed */
 
 body.dark-mode .firstsec{
     background: rgb(0, 3, 28);
-    /* background: transparent; */
 }
 
 body.dark-mode .top{
     background: rgb(0, 1, 15);
-    /* background: transparent; */
 }
 .ds6{
     position: absolute;
@@ -394,8 +392,6 @@ body.dark-mode .sec2 h1 span{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        /* background-color: rgb(255, 3, 247); */
-        /* z-index: 1000000; */
         background-color: rgb(0, 0, 0, 0.9);
     }
     .ds1, .ds2, .ds3, .ds4, .ds5, .ds6{
@@ -448,7 +444,6 @@ body.dark-mode .sec2 h1 span{
         height: 3px;
         background-color: #ffffff;
         border-radius: 3px;
-        /* transform: rotate(45deg)  translate(-2px, 0px) ; */
     }
     .toggle-close:hover .bar1{
         margin: 0;
@@ -477,22 +472,11 @@ body.dark-mode .sec2 h1 span{
         height: 100%;
     }
     .firstsec .left{
-        /* order: 1; */
         height: 500px;
         margin-top: 100px;
     }
 }
 @media screen and (max-width: 800px){
-    /* .svg-lines{
-        width: 100%;
-    }
-    .s1 .skill-tag{
-        width: 110px;
-        margin: 0;
-    } */
-    /* .s1 div{
-        margin: 0 10px;
-    } */
     .sec2{
         padding: 30px;
     }
@@ -506,7 +490,11 @@ body.dark-mode .sec2 h1 span{
         margin: 3% 5%;
     }
     .sec2 h1{
-        font-size: 3.5em;
+        font-size: 3em;
+    }
+    #text{
+        width: 80%;
+        margin: auto;
     }
     .sec2 p{
         font-size: 20px;
@@ -525,7 +513,7 @@ body.dark-mode .sec2 h1 span{
     }
     .firstsec .left{
         font-size: 60px;
-        width: 400px;
+        width: 399px;
         height: 300px;
     }
     .firstsec .right{
@@ -536,7 +524,8 @@ body.dark-mode .sec2 h1 span{
         width: 400px;
     }
     .abimg img{
-        height: 400px;
+        height: 350px;
+        margin: 0 20px;
     }
     .abimg{
         margin: 0;
@@ -573,18 +562,30 @@ body.dark-mode .sec2 h1 span{
     .abdata{
         margin-bottom: 50px;
     }
+    .pimg h1{
+        font-size: 40px;
+    }
+    .pimg img{
+        width: 100%;
+    }
     .abdata{
         margin-bottom: 50px;
     }
-    /* .skill-tag{
-        font-size: 25px;
-    }
-    .s1 div{
-        margin: 0 10px;
-        margin-bottom: 20px;
-    } */
     .erase{
         display: none;
+    }
+    .toggle-button{
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bar{
+        margin: 3px;
+    }
+    .top{
+        height: 80px;
     }
     .row img{
         width: 80%;
@@ -605,14 +606,17 @@ body.dark-mode .sec2 h1 span{
         width: 100%;
     }
     .firstsec .left{
-        font-size: 50px;
+        font-size: 47px;
         text-align: center;
     }
 }
 
-
-@media screen and (max-width:380px){
-    *{
-        overflow: auto;
+@media screen and (max-width:366px) {
+    .skill{
+        width: 100%;
+    }
+    .sec2{
+        margin: 3% 2.3%;
+        padding: 22px;
     }
 }

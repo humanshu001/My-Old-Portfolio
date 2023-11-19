@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="Assets/CSS/index.css">
     <script src="Assets/JS/typing.js"></script>
     <script src="Assets/JS/index.js"></script>
+    <script src="Assets/JS/dark.js"></script>
     <link rel="shortcut icon" href="Assets/Images/favicon.jpeg" type="image/x-icon">
 </head>
 <body>
@@ -478,29 +479,4 @@
         </div>
     </section>
 </body>
-<script>
-// for dark mode
-
-
-
-  const darkModeSwitch = document.getElementById('dark-mode-switch');
-const body = document.body;
-
-function setDarkMode(enabled) {
-    body.classList.toggle('dark-mode', enabled);
-    localStorage.setItem('dark-mode-enabled', enabled);
-}
-
-const storedDarkMode = localStorage.getItem('dark-mode-enabled');
-if (storedDarkMode) {
-    darkModeSwitch.checked = storedDarkMode === 'true';
-}
-
-darkModeSwitch.addEventListener('change', (e) => {
-    setDarkMode(e.target.checked);
-});
-
-setDarkMode(darkModeSwitch.checked);
-
-</script>
 </html>

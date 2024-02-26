@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Qwitcher Grypen';
+    src: url('../files/Qwitcher_Grypen/QwitcherGrypen-Bold.ttf')
+}
+
+@font-face {
+    font-family: 'maven pro';
+    src: url('../files/Maven_Pro/MavenPro-VariableFont_wght.ttf')
+}
+
+:root {
+    --purple: rgb(130, 130, 228)
+}
+
+.line-1 {
+    width: 35px;
+    height: 4px;
+    margin: 6px 0;
+    background-color: white;
+    border-radius: 5px;
+
+}
+
+* {
+    font-family: maven pro;
+    color: white !important;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, #000, #2b003e, #b400ae, #00052d, #000, #00052d, #00caca, #00052d, #000);
+    background-size: 400% 400%;
+    animation: gradient 60s infinite;
+}
+
+.offcanvas-header {
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    /* border-right: 1px solid white; */
+}
+
+.offcanvas {
+    background-color: black;
+    background: linear-gradient(to bottom right, #000, #2b003e, #b400ae, #00052d, #000, #00052d, #00caca, #00052d, #000);
+    background-size: 400% 400%;
+    border-right: 1px solid white;
+    animation: gradient 60s  infinite;
+    transition: 1s;
+}
+
+@keyframes visible {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes gradient {
+   
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.table td {
+    background-color: transparent !important;
+    color: white !important;
+}
+
+.btn-close {
+    color: white !important;
+}
+
+.main-heading {
+    font-family: Qwitcher Grypen;
+    font-size: 100px;
+    text-align: center;
+}
+.about-admin{
+    margin: auto;
+    margin-top: 50px;
+}
+.about-admin h1{
+    font-size: 55px;
+    text-align: center;
+}
+.about-admin p{
+    text-align: center;
+    font-size: 20px;
+    font-family: maven pro;
+}
+.my-image{
+    width: 300px;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    margin-top: 50px;
+}
+
+.admin-input{
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    outline: none;
+}
+
+.admin-input::placeholder{
+    color: white;
+}
+
+.admin-input:focus-visible{
+    background: transparent;
+}
+.admin-input option:not(:checked){
+    background: black;
+}
+
+.admin-input option:checked{
+    background: black;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
